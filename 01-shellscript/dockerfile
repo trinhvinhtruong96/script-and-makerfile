@@ -2,4 +2,7 @@ FROM ubuntu:jammy
 
 WORKDIR /zone
 
+RUN ["apt-get", "update"]
+RUN ["apt-get", "install", "-y", "vim"]
+
 ENTRYPOINT [ "bash" ]
